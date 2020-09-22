@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Javascript </title>
+        <script>
+            function Alerta(){
+                alert('Ola Mundo')
+            }
+        </script>
+    </head>
+    <body>
+        <h2> Aula Javascript </h2>
+        <button type="button" onclick="document.getElementById('aula01').innerHTML = Date()"> Que dia é hoje? </button>
+        <div id="aula01"></div>
+
+        <h2> Lampadas </h2>
+        <button onclick="document.getElementById('imagem').src='img/lampadaOFF.png'"> Desligar Lampada </button>
+        <img id="imagem" src="img/lampadaOFF.png" style="width: 100px;">
+        <button onclick="document.getElementById('imagem').src='img/lampadaON.png'"> Ligar Lampada </button>
+
+        <div id="olamundo"></div>
+        <script>
+            document.getElementById('olamundo').innerHTML = " Ola Mundo ";
+        </script>
+        <button onclick="Alerta()"> Enviar </button>
+        <button onclick="Teste()"> Teste </button>
+        <script src="intro.js"></script>
+    </body>
+</html>

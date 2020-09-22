@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Calculadora </h2>
+    <form action="" method="POST">
+        <label for="">Valor1</label>
+        <input type="text" name="txtValor1" id="txtValor1" required/>
+        <br/>
+        <label for="">Valor2</label>
+        <input type="text" name="txtValor2" id="txtValor2" required/>
+        <br/>
+        <br/>
+        <label for="">Operação</label>
+        <select name="txtOp" id="txtOp" required>
+            <option value="1">Somar</option>
+            <option value="2">Subtrair</option>
+            <option value="3">Multiplicar</option>
+            <option value="4">Dividir</option>
+        </select>
+        <br/> <br/>
+        <button type="submit" id="btnExecutar"> Calculo </button>
+    </form>
+    <div>
+        <p>
+            Resultado do Calculo:
+            <span id="display"></span>
+        </p>
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+</html>

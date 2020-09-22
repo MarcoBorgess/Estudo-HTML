@@ -1,0 +1,23 @@
+/* CSS reset */
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.conteudo {
+    position: relative;
+    width: 480px;
+    min-height: 560px;
+    margin: 0px auto;
+    margin-top: 80px;
+    background: #f7f7f7;
+    border: 1px solid rgba(147, 189, 169, 0.8);
+    -webkit-border-radius: 0 0  5px 5px;
+    border-radius: 5px;
+}
+#title {
+    color: seagreen;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}

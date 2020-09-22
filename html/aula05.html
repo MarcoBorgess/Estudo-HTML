@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formularios</title>
+    </head>
+    <body>
+        <form action="pegar_dados.php" method="POST">
+            <label for="nome"> Nome </label> <br>
+            <input type="text" name="txtNome" value="Marco"/> <br>
+            <label for="sobrenome"> Sobrenome </label> <br>
+            <input type="text" name="txtSobrenome" value="Borges"/> <br>
+        </form>
+        <br>
+        <form action="" method="GET">
+            <input type="radio" name="esporte" value="Boxe">
+            <label for=""> Boxe </label>
+            <input type="radio" name="esporte" value="Jiu Jitsu">
+            <label for=""> Jiu Jitsu </label>
+            <input type="radio" name="esporte" value="Capoeira">
+            <label for=""> Capoeira </label>
+        </form>    
+        <br>
+        <form action="" method="GET">
+            <input type="checkbox" name="esporte" value="Boxe">
+            <label for=""> Boxe </label>
+            <input type="checkbox" name="esporte" value="Jiu Jitsu">
+            <label for=""> Jiu Jitsu </label>
+            <input type="checkbox" name="esporte" value="Capoeira">
+            <label for=""> Capoeira </label>    
+        </form>
+    </body>
+</html>

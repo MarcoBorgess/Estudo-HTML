@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Calculadora IMC </title>
+        <link rel="stylesheet" href="atv03.css">
+        <script src="atv03.js"></script>
+    </head>
+    <body>
+        <div class="background">
+            <div class="conteudo">
+                <h1 id="imc"> Calculadora IMC </h1>
+                <h1 class="title"> Sexo </h1>
+                <div class="btn-group">
+                    <input type="radio" id="mulher" name="radios" value="true" checked>
+                    <label for="mulher">Mulher</label>
+                    <input type="radio" id="homem" name="radios"value="false">
+                    <label for="homem">Homem</label>
+                </div>
+                <form name="imcForm" class="imcForm">
+                <h1 class="title" id="idade"> Idade </h1>
+            
+                    <input id="inputidade" name="inputidade" required type="number" placeholder="35"/>
+                    <label for="inputidade" class="desc"> anos </label>    
+                
+                <h1 class="title"> Altura </h1>
+                
+                    <input id="inputaltura" name="inputaltura" required type="number" placeholder="1,60"/>
+                    <label for="inputaltura" class="desc"> m </label>    
+                
+                <h1 class="title"> Peso </h1>
+                
+                    <input id="inputpeso" name="inputpeso" required type="number" placeholder="62,5"/>
+                    <label for="inputpeso" class="desc"> kg </label>    
+                </form>
+                <h1 class="title"> Atividade Física </h1>
+                <div class="btn-group2">
+                    <input type="radio" id="sedentaria" name="radios2" value="all" checked>
+                    <label for="sedentaria">Sendentária</label>
+                    <input type="radio" id="moderada" name="radios2" value="all">
+                    <label for="moderada">Moderada </label>
+                    <input type="radio" id="intensa" name="radios2" value="all">
+                    <label for="intensa">Intensa</label>
+                </div>
+                <button type="submit" id="btnCalcular" onclick="calcularIMC()"> Calcular </button>
+                <h1 class="title" id="result"> Resultado: </h1>
+                <span id="display"></span>
+            </div>
+        </div>
+        
+    </body>
+</html>
