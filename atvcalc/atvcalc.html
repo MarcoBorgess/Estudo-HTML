@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
-    <script src="atvcalc.js"></script>
-    <link rel="stylesheet" href="atvcalc.css">
-</head>
-<body>
-    <div class="conteudo">
-        <p id="title">Calculadora</p>
-        <form name="calc">
-            <input type="text" name="visor" />
-            <br>
-            <!-- LINHA 1 -->
-            <input type="button" value="%" onclick="botao(value);"/>
-            <input type="button" value="C" onclick="botao(value);"/>
-            <input type="button" value="/" onclick="botao(value);"/>
-            <br>
-            <!-- LINHA 2 -->
-            <input type="button" value="7" onclick="botao(value);"/>
-            <input type="button" value="8" onclick="botao(value);"/>
-            <input type="button" value="9" onclick="botao(value);"/>
-            <input type="button" value="*" onclick="botao(value);"/>
-            <br>
-            <!-- LINHA 3 -->
-            <input type="button" value="4" onclick="botao(value);"/>
-            <input type="button" value="5" onclick="botao(value);"/>
-            <input type="button" value="6" onclick="botao(value);"/>
-            <input type="button" value="-" onclick="botao(value);"/>
-            <br>
-            <!-- LINHA 4 -->
-            <input type="button" value="1" onclick="botao(value);"/>
-            <input type="button" value="2" onclick="botao(value);"/>
-            <input type="button" value="3" onclick="botao(value);"/>
-            <input type="button" value="+" onclick="botao(value);"/>
-            <br>
-            <!-- LINHA 5 -->
-            <input type="button" value="0" onclick="botao(value);"/>
-            <input type="button" value="." onclick="botao(value);"/>
-            <input type="button" value="=" onclick="botao(value);"/>
-        </form>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+        <script language="javaScript" src="atvcalc.js"></script>
+        <link rel="stylesheet" href="atvcalc.css">
+    </head>
+    <body>
+            <form name="calc">
+                <div id="calculadora">
+                    <input type="text" name="visor" />
+                    <br>
+                    <!-- LINHA 1 -->
+                    <div id="linha1">
+                        <input type="button" value="7" class="botaob" onclick="botao(value);"/>
+                        <input type="button" value="8" class="botaob" onclick="botao(value);"/>
+                        <input type="button" value="9" class="botaob" onclick="botao(value);"/>
+                        <input type="button" value="/" class="botaob" onclick="botao(value);"/>
+                    </div>
+                    <!-- LINHA 2 -->
+                    <div id="linha2">
+                        <input type="button" value="4" class="botaob" onclick="botao(value);"/>
+                        <input type="button" value="5" class="botaob" onclick="botao(value);"/>
+                        <input type="button" value="6" class="botaob" onclick="botao(value);"/>
+                        <input type="button" value="*" class="botaob" onclick="botao(value);"/>
+                    </div>
+                    <!-- LINHA 3 -->
+                    <div id="linha3">
+                        <input type="button" value="1" class="botaob" onclick="botao(value);"/>
+                        <input type="button" value="2" class="botaob" onclick="botao(value);"/>
+                        <input type="button" value="3" class="botaob" onclick="botao(value);"/>
+                        <input type="button" value="-" class="botaob" onclick="botao(value);"/>
+                    </div>
+                    <!-- LINHA 4 -->
+                    <div id="linha4">
+                        <input type="button" value="C" class="botaob" onclick="limpar();"/>
+                        <input type="button" value="0" class="botaob" onclick="botao(value);"/>
+                        <input type="button" value="=" class="botaob" onclick="calcular();"/>
+                        <input type="button" value="+" class="botaob" onclick="botao(value);"/>
+                    </div>
+                </div>
+            </form>
+    </body>
 </html>
